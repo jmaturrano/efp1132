@@ -1,0 +1,389 @@
+/*
+Theme Name: MK System
+Theme URI: http://mksystemsoft.com/
+Author: Julio Maturrano
+Author URI: 
+Template: dazzling
+Version: 0.1
+Tags: black, gray, red, white, one-column, two-columns, right-sidebar,fixed-layout,light,front-page-post-form,full-width-template,rtl-language-support,sticky-post,theme-options,responsive-layout, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready, photoblogging, accessibility-ready
+Text Domain: mksystem
+This Theme is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url('../dazzling/style.css');
+/*
+Aquí empieza la personalización del tema
+---------------------------------------------------------------------------------
+*/
+.content-ul-header{
+  float: right;
+}
+ul.content-ul-header li{
+  list-style: none;
+  display: inline-block;
+}
+.content-ul-header li.menu-item a{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header-rigth #menu-menu-principal.nav > li > a{
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.header-rigth #menu-menu-principal.nav > li{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar-default.navbar-mksystem .navbar-nav > li > a, 
+.navbar-default.navbar-mksystem .navbar-nav > li > label{
+  color: #000;
+  font-weight: 600;
+}
+.navbar-default.navbar-mksystem .navbar-nav > li > a:hover{
+  color: #6b6b6b;
+}
+.btn-default, .label-default{
+  background: transparent;
+  border-color: #000;
+}
+.form-search .form-control{
+  border-color: #000;
+}
+.form-control:focus{
+  border-color: #000;
+}
+.btn.btn-default{
+  color: #000;
+}
+.btn-default:hover, 
+.label-default[href]:hover, 
+.label-default[href]:focus, 
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default:active, 
+.btn-default.active, 
+#image-navigation .nav-previous a:hover, 
+#image-navigation .nav-next a:hover{ 
+  background-color: #ccc;
+  border-color: #ccc; 
+}
+.form-search .form-control{
+  height: 25px;
+  max-width: 120px;
+}
+.form-search .btn{
+  font-size: 14px;
+  line-height: 19px;
+  padding: 2px 9px;
+}
+.form-search .form-group{
+  margin: 0;
+}
+.header-rigth .navbar-nav > li > a{
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.header-rigth .menu-item label{
+  margin-bottom: 0;
+  margin-top: 3px;
+}
+.flex-caption h2{
+  background: transparent;
+  font: 600 50px/50px Lato;
+}
+.flex-caption .excerpt{
+  background: transparent;
+}
+.flex-caption{
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  bottom: auto;
+  left: 5% !important;
+  margin-left: 0;
+  max-width: 560px;
+  padding: 25px 30px;
+  top: 10% !important;
+}
+.flex-control-nav{
+  padding-left: 16%;
+  text-align: left;
+}
+.flex-control-paging li a.flex-active{
+  background: #fff;
+}
+.flex-control-paging li a{
+  background: rgba(255, 255, 255, 0.7);
+}
+.flex-direction-nav a{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.copyright{
+  float: none;
+  text-align: left;
+  color: #000!important;
+}
+.copy-right a {
+    color: #000 !important;
+}
+.owl-carousel .flex-prev, 
+.owl-carousel .flex-next{
+  opacity: 1;
+}
+.owl-theme .owl-controls .owl-buttons div{
+  background: transparent;
+}
+.owl-controls .flex-direction-nav a{
+  top: 30%;
+}
+.owl-controls .flex-direction-nav .flex-prev{
+  left: -40px;
+}
+.owl-controls .flex-direction-nav .flex-prev{
+  left: -40px;
+}
+.owl-controls .flex-direction-nav .flex-next{
+  right: 5px;
+}
+.owl-controls .flex-direction-nav a{
+  color: rgba(0, 0, 0, 0.7);
+}
+.section-title{
+  padding: 20px 0 80px;
+}
+.section-title h2, 
+.section-title-part h2{
+  color: #000;
+  font-weight: 600;
+  margin: 0;
+}
+.section-title-part{
+  padding-bottom: 15px;
+}
+.mksystem-clearfix{
+  padding: 40px 0;
+}
+.footer-nav.nav > li{
+  display: block;
+  text-transform: uppercase;
+}
+#footer-area ul li{
+  border-bottom: 0 none;
+}
+#footer-area{
+  background-color: #fff;
+  border-top: 6px solid #e33a35;
+}
+.footer-inner{
+  padding: 35px 0;
+}
+#footer-area a{
+  color: #000;
+}
+#footer-area a:hover{
+  color: #000;
+  font-weight: 600;
+}
+.footer_social-wrapper .menu-item-title{
+  display: none;
+}
+.footer_social-wrapper a.social-icon{
+  border-radius: 50%;
+  width: 52px;
+}
+#colophon{
+  border-top: 0 none;
+}
+.footer_subscription-wrapper .container, 
+.footer_subscription-wrapper .container .col-md-5, 
+.footer_subscription-wrapper .container .col-md-7, 
+.footer_subscription-wrapper .cfa, 
+.footer_subscription-wrapper #sm_wrapper{
+  max-width: 100%;
+  padding: 0;
+}
+.footer_subscription-wrapper .container .col-md-5, 
+.footer_subscription-wrapper .container .col-md-7, 
+.footer_subscription-wrapper .sm_field{
+  margin: 0 !important;
+  /*padding: 3px !important;*/
+  max-width: 100%;
+  width: 100% !important;
+}
+.footer_subscription-wrapper .sm_field{
+  padding: 5px !important;
+}
+.footer_subscription-wrapper #sm_top, 
+.footer_subscription-wrapper .container .col-md-5{
+  display: none;
+}
+.footer_subscription-wrapper input[type="text"].sm_field{
+  display: none;
+}
+.footer_subscription-wrapper #sm_footer{
+  background: transparent;
+  padding: 0;
+}
+.footer_subscription-wrapper .cfa{
+  background: transparent;
+}
+.footer_subscription-wrapper #sm_content p{
+  display: none;
+}
+.footer_menu-title{
+  margin-bottom: 10px;
+}
+.footer_menu-title img{
+  max-width: 180px;
+}
+.footer_menu-title h4{
+  border-bottom: 2px solid #e33a35;
+  border-top: 2px solid #e33a35;
+  color: #000;
+  font: 600 20px/20px Lato;
+  margin: 9px 0;
+  padding: 8px 0;
+}
+.scroll-to-top:hover{
+  background: #E33A35;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a{
+  color: #000;
+}
+
+.menu-item .woo-menu-cart{
+  display: none;
+}
+.categories-page img, 
+.owl-carousel-productos-2 img{
+  transition: all 300ms ease 0s;
+}
+.categories-page img:hover, 
+.owl-carousel-productos-2 img:hover{
+  transform: scale(1.2);
+}
+.woocommerce-breadcrumb, 
+.woocommerce-breadcrumb a{
+  text-transform: uppercase;
+}
+.entry-meta{
+  display: none;
+}
+.owl-carousel-productos-2{
+  display: none;
+}
+#sm_wrapper{
+  min-width: 1px !important;
+}
+
+.products-frontpage img{
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 1215px) {
+  .owl-carousel-productos{
+    display: none !important;
+  }
+  .owl-carousel-productos-2{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .flex-caption h2{
+    font: 600 25px/25px Lato;
+  }
+  #logo img{
+    max-width: 150px;
+  }
+  .header-rigth > .content-ul-header{
+    display: none;
+  }
+  #menu-menu-principal{
+    /*margin-top: 55px;*/
+  }
+  .owl-carousel-productos-2 .clear{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .navbar-header{
+    text-align: center;
+  }
+  #menu-menu-principal a{
+    border-bottom: 0 none !important;
+    text-align: center;
+    padding: 8px 0;
+  }
+  .navbar-mksystem{
+    padding: 10px 0;
+  }
+  .footer_social-wrapper ul li{
+    display: inline-block;
+  }
+  .section-title h2, .section-title-part h2{
+    font-size: 20px;
+  }
+  .footer_menu-title h4{
+    border-top: 0 none !important;
+    border-bottom: 0 none !important;
+    text-align: left;
+  }
+/*  .footer_social-wrapper .menu-item.menu-item-title{
+    display: none;
+  }
+*/
+}
+
+.quantity, 
+.single_add_to_cart_button, 
+.add_to_cart_btn{
+  display: none !important;
+}
+
+@media screen and (max-width: 460px) {
+  .section-title h2, .section-title-part h2{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .section-title h2, .section-title-part h2{
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+
+  input[type="text"], 
+  input[type="email"], 
+  input[type="url"], 
+  input[type="password"], 
+  input[type="search"]{
+    max-width: 100%;
+  }
+}
+
+.form-search .input-group{
+  display: block !important;
+}
+.form-search .input-group-btn{
+  display: inline-block !important;
+}
+ul.content-ul-header li{
+  vertical-align: middle;
+}
+#searchsubmit{
+  margin-top: -0.8px;
+}
+.btn.btn-default.read-more{
+  color: #000;
+}
+.posted_in a{
+  display: block;
+}
+.posted_in a:hover{
+  font-weight: 600;
+}
