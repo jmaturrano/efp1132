@@ -91,6 +91,8 @@ ul.content-ul-header li{
 .flex-caption h2{
   background: transparent;
   font: 600 50px/50px Lato;
+  max-width: 100%;
+  margin: 0 !important;
 }
 .flex-caption .excerpt{
   background: transparent;
@@ -100,9 +102,12 @@ ul.content-ul-header li{
   bottom: auto;
   left: 5% !important;
   margin-left: 0;
-  max-width: 560px;
-  padding: 25px 30px;
-  top: 10% !important;
+  max-width: 760px;
+  padding: 10px;
+  bottom: 10% !important;
+}
+.flex-caption .excerpt{
+  display: none;
 }
 .flex-control-nav{
   padding-left: 16%;
@@ -286,6 +291,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a{
   }
   .owl-carousel-productos-2{
     display: block;
+  }
+  .flex-caption{
+    bottom: 13% !important;
+    max-width: 740px;
+    padding: 0;
   }
 }
 
