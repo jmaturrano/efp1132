@@ -574,11 +574,12 @@ function mksystem_footer_info() {
 ?>
   <div class="copy-right">&copy; <?php echo bloginfo('name');?> <?php echo date_i18n('Y'); ?>
     <?php echo esc_html__(" - Desarrollado por","mksystem");?> 
-    <a href="<?php echo esc_url("javascript:;","mksystem");?>" target="_blank"><?php echo esc_html__("MK System","mksystem");?></a> 
+    <a href="<?php echo esc_url("javascript:;","mksystem");?>" target="_blank"><?php echo esc_html__("DevIT - Web & Multimedia","mksystem");?></a> 
   </div>
 
 <?php
 }
+
 
 
 
@@ -873,12 +874,13 @@ function mksystem_categories_carousel_initlast(){
   if(count($category_products) > 0){
     $items = 0;
     $i = 1;
-    $categories_html .= '<div class="owl-carousel-productos">';
+    $categories_html .= '<div class=" owl-carousel-productos" >';
+    
     foreach ($category_products as $category) {
       $thumb_url = ($category['thumb_url'] == '') ? get_template_directory_child().'/inc/image/categorias/default_400x400.jpg' : $category['thumb_url'];
 
       if($i == 1){
-        $categories_html .= '<div class="products-frontpage item">';
+        $categories_html .= '<div class="products-frontpage item " >';
       }//end if
 
       // $href_link = ($category['description'] !== '') ? $category['description'] : $category['term_link'];
@@ -886,7 +888,7 @@ function mksystem_categories_carousel_initlast(){
       // $target_    = ($category['description'] !== '') ? 'target="_blank"' : '';
       $target_    = '';
       // if($items <= ((count($category_products)/2)-1)){//
-      $categories_html .= '<div class="col-md-3"><a '.$target_.' href="'.$href_link.'" title="'.$category['name'].'"><img src="'.$thumb_url.'"></a></div>';
+      $categories_html .= '<div class="col-md-3 cropx "><a '.$target_.' href="'.$href_link.'" title="'.$category['name'].'"><img src="'.$thumb_url.'"></a></div>';
       // }//end if
 
       if($i == 8){
@@ -915,8 +917,8 @@ function mksystem_categories_carousel_endlast(){
     foreach ($category_products as $category) {
       $thumb_url = ($category['thumb_url'] == '') ? get_template_directory_child().'/inc/image/categorias/default_400x400.jpg' : $category['thumb_url'];
 
-      if($i == 1){
-        // $categories_html .= '<div class="products-frontpage item">';
+      if($i == 8){
+//         $categories_html .= '<div class="products-frontpage item">';
       }//end if
 
       // $href_link = ($category['description'] !== '') ? $category['description'] : $category['term_link'];
@@ -924,11 +926,10 @@ function mksystem_categories_carousel_endlast(){
       // $target_    = ($category['description'] !== '') ? 'target="_blank"' : '';
       $target_    = '';
       // if($items <= ((count($category_products)/2)-1)){//
-      $categories_html .= '<div class="col-md-3 col-sm-4 col-xs-6"><a '.$target_.' href="'.$href_link.'" title="'.$category['name'].'"><img src="'.$thumb_url.'"></a></div>';
+      $categories_html .= '<div class="col-md-3 col-sm-4 col-xs-6 cropx"><a '.$target_.' href="'.$href_link.'" title="'.$category['name'].'"><img src="'.$thumb_url.'"></a></div>';
       // }//end if
-
       if($i == 8){
-        // $categories_html .= '</div>';
+//         $categories_html .= '</div>';
         $i = 0;
       }
       if($i%4 == 0){

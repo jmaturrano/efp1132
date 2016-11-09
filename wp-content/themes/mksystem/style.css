@@ -260,8 +260,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a{
   display: none;
 }
 .categories-page img, 
-.owl-carousel-productos-2 img{
-  transition: all 300ms ease 0s;
+.owl-carousel-productos-2 
+img{
+    transition: all 300ms ease 0s;
 }
 .categories-page img:hover, 
 .owl-carousel-productos-2 img:hover{
@@ -287,7 +288,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a{
 
 @media screen and (max-width: 1215px) {
   .owl-carousel-productos{
-    display: none !important;
+    display: none !important ;
   }
   .owl-carousel-productos-2{
     display: block;
@@ -397,3 +398,18 @@ ul.content-ul-header li{
 .posted_in a:hover{
   font-weight: 600;
 }
+
+.crop {
+    height: 164px;
+    object-fit: cover;
+    overflow: hidden;
+    width: 300px;
+    /*width: 292px;*/
+}
+.crop img {
+    height: 255px;
+    margin: -40px 0px 0px 25px;
+    width: 2000 !important;
+    /*width: 2000 !important;*/
+}
+

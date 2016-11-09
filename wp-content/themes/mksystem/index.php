@@ -26,7 +26,7 @@ get_header(); ?>
         </div>
         <div class="col-sm-12 col-md-12">
             <?php //mksystem_categories_carousel_top(); ?>
-            <?php //mksystem_categories_carousel_bottom(); ?>
+            <?php // mksystem_categories_carousel_bottom(); ?>
             <?php get_woocommerce_product_list_toplast(); ?>
             <?php get_woocommerce_product_list_bottomlast(); ?>
         </div><!-- #primary -->
@@ -43,30 +43,45 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-
-        <div class="col-md-12" style="padding: 0;">
-            <?php //get_woocommerce_product_list(); ?>
-            <?php //get_woocommerce_product_list2(); ?>
+       <!---->
+        <div class="col-md-12" style="padding: 0;" >
+            <?php // get_woocommerce_product_list(); ?>
+            <?php // get_woocommerce_product_list2(); ?>
             <?php mksystem_categories_carousel_initlast(); ?>
             <?php mksystem_categories_carousel_endlast(); ?>
         </div>
 
-        <div class="col-md-12 mksystem-clearfix">
+<!--        <div class="col-md-12 mksystem-clearfix">
             <div class="clear">
                 <br>
             </div>
+        </div>-->
+        
+         <div class="col-md-12">
+            <div class="section-title text-center">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <span><hr></span>
+                </div>
+                <h2 class="col-md-4 col-sm-4 col-xs-4">Fachada</h2>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <span><hr></span>
+                </div>
+            </div>
         </div>
-
         <div class="col-md-5 col-sm-5 col-xs-12">
             <?php //if( get_theme_mod('aboutus-page1',false) ) { ?>
-
+            
+           
+            
             <?php 
                 $aboutusquery1 = new wp_query('page_id=99');
                 if( $aboutusquery1->have_posts() ) {   
                     while( $aboutusquery1->have_posts() ) { 
                         $aboutusquery1->the_post();
             ?>
-                <div class="section-title-part text-center"><h2><?php the_title(); ?></h2></div>
+            
+      
+            
             <?php
                         the_content();
                     }//end while
