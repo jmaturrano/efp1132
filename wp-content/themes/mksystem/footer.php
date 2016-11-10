@@ -9,7 +9,7 @@
 ?>
                 </div><!-- close .row -->
             </div><!-- close .container -->
-        </div><!-- close .site-content -->
+                </div></div><!-- close .site-content -->
 
 	<div id="footer-area">
 		<div class="container footer-inner">
@@ -58,7 +58,7 @@
 					<?php mksystem_footer_info(); ?>
 				</div>
 			</div><!-- .site-info -->
-			<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+			<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div> 
 		</footer><!-- #colophon -->
 	</div>
 </div><!-- #page -->
